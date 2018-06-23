@@ -1,2 +1,2 @@
-# mini-programs
-includes mini-projects (find prime numbers, print fibonacci numbers etc...)
+## 24.06.2018 Sunday
+some mini-projects/programs that I created during my university education
