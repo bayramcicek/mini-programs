@@ -3,7 +3,7 @@
 # 19 * 91 = 1729
 
 ramanujan = []
-for n in range(1000,10000): # you can change the range whatever you want
+for n in range(1000,10000): # you can change the range to whatever you want
     top = 0
     for i in list(str(n)):
         top +=int(i)
