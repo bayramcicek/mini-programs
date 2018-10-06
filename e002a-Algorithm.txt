@@ -1,0 +1,10 @@
+A1) Başla
+A2) CiftTop = 0
+A3) n = 4000000
+A4) fib=0 , fib1=1 , fib2=1
+A5) Eğer fib > n ise A9'a git
+A6) Eğer MOD(fib,2) == 0 ise  CiftTop = CiftTop + fib
+A7) fib = fib1 + fib2
+A8) fib1=fib2 , fib2=fib al ve A5'e git
+A9) CiftTop'u yazdır.
+A10) Dur
