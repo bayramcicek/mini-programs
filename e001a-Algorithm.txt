@@ -1,0 +1,13 @@
+A1) Başla
+A2) TopThree=0 , TopFive=0 , TopFifteen=0 , Result=0 , uc=3 , bes=5 , onbes=15
+A3) Eğer uc >= 1000 ise A6'ya git
+A4) TopThree = TopThree + uc
+A5) uc = uc + 3
+A6) Eğer bes >= 1000 ise A9'ya git
+A7) TopFive = TopFive + bes
+A8) bes = bes + 5
+A9) Eğer onbes >= 1000 ise A12'ya git
+A10) TopFifteen = TopFifteen + onbes
+A11) onbes = onbes + 15
+A12) Result = TopThree + TopFive - TopFifteen
+A13) Result'u yaz
