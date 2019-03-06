@@ -1,18 +1,23 @@
 package peuler;
 
+import java.util.ArrayList;
+
 /**
  * created by cicek on 06.03.2019 21:38
  */
 
-public class p_011_largest_product {
+public class e011_largest_product {
     public static void main(String[] args) {
 
         int sumRightLeft = 1;
         int sumUpDown = 1;
         int sumRightDiagonal = 1;
         int sumLeftDiagonal = 1;
+
         int temp = 1;
         int res = 1;
+
+        ArrayList<Integer> answer = new ArrayList<Integer>();
 
         int[][] productArray = {{8, 2, 22, 97, 38, 15, 00, 40, 00, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8,}, /*0*/
                 {49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 00,}, /*1*/
@@ -59,6 +64,7 @@ public class p_011_largest_product {
         }
 
         System.out.printf("res sumRightLeft: %12d\n", res);
+        answer.add(res);
         res = 1;
         temp = 1;
 
@@ -83,6 +89,7 @@ public class p_011_largest_product {
         }
 
         System.out.printf("res sumUpDown: %15d\n", res);
+        answer.add(res);
         res = 1;
         temp = 1;
 
@@ -107,6 +114,7 @@ public class p_011_largest_product {
         }
 
         System.out.printf("res sumRightDiagonal: %d\n", res);
+        answer.add(res);
         res = 1;
         temp = 1;
 
@@ -131,7 +139,18 @@ public class p_011_largest_product {
         }
 
         System.out.printf("res sumLeftDiagonal: %9d\n", res);
+        answer.add(res);
 
+        System.out.printf("" + answer + "\n");
+        int cevap = 1;
+        for (int a: answer
+             ) {
+            if (a > cevap){
+                cevap = a;
+            }
+        }
+
+        System.out.printf("cevap : %d", cevap);
 
 
     } // main
@@ -142,7 +161,8 @@ res sumRightLeft:     48477312
 res sumUpDown:        51267216
 res sumRightDiagonal: 40304286
 res sumLeftDiagonal:  70600674
-
+[48477312, 51267216, 40304286, 70600674]
+cevap : 70600674
 Process finished with exit code 0
  */
 
