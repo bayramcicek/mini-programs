@@ -21,7 +21,7 @@ for i in range(3,limit):
     if prime == 1:
         sexyPrime.append(i)
 
-# print sexy prime numbers whose difference is 6
+# print sexy prime numbers
 for x in sexyPrime:
     if ( (sexyPrime.count(x+6)) == 1 ):
         print(str(x),str(x+6))
