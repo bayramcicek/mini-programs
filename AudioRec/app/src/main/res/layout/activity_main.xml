@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="startRecording"
+        android:text="Start_REC"
+        app:layout_constraintBottom_toTopOf="@id/stopRec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audioRecordView" />
+
+    <Button
+        android:id="@+id/stopRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP_REC"
+        android:onClick="stopRecording"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startRecording" />
+
+
+    <com.visualizer.amplitude.AudioRecordView
+        android:id="@+id/audioRecordView"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        app:chunkAlignTo="bottom"
+        app:chunkColor="#FF0000"
+        app:chunkMaxHeight="124dp"
+        app:chunkMinHeight="2dp"
+        app:chunkRoundedCorners="true"
+        app:chunkSoftTransition="false"
+        app:chunkSpace="1dp"
+        app:chunkWidth="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
